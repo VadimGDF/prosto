@@ -1,0 +1,55 @@
+.blue{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    margin-left: 200px;
+    margin-top: 200px;
+
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-delay: .5;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+.blue-small:hover ~ .blue{
+    animation-play-state: paused;
+}
+.blue-small{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    margin-left: 100px;
+    margin-top: 100px;
+    border: none;
+    border-radius: 50%;
+}
+@keyframes rotate {
+0%{
+    transform: rotate(0deg);
+}
+10%{
+    transform: rotate(15deg);
+}
+30%{
+    transform: rotate(5deg);
+}
+50%{
+    transform: rotate(50deg);
+}
+60%{
+    transform: rotate(40deg);
+}
+70%{
+    transform: rotate(60deg);
+}
+85%{
+    transform: rotate(130deg);
+}
+100%{
+    transform: rotate(90deg);
+}
+}
+@media screen and (max-width: 480px){
+    
+}
